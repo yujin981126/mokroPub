@@ -19,7 +19,7 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="super_container">
+<div class="super_container fixFooter">
    <!-- Header -->   
    <jsp:include page="/WEB-INF/inc/navBar.jsp"></jsp:include>
    <!-- contents -->
@@ -158,18 +158,9 @@
    </div>
             </div>
          </div>
-	<c:if test="${fn:length(searchResultList) != 0}">
-	</div>
-			<!-- Footer -->	
-			<jsp:include page="../../../WEB-INF/inc/footer.jsp"></jsp:include>
-	</c:if>
-	
-	<c:if test="${fn:length(searchResultList) == 0}">
-		</div>
+         </div>
 		<!-- Footer -->
-		<div class ="fixFooter">
 			<jsp:include page="../../../WEB-INF/inc/footer.jsp" ></jsp:include>
 		</div>
-	</c:if>
 </body>
 </html>

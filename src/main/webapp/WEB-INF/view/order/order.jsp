@@ -21,7 +21,7 @@
 </head>
 <body>
 <form method="post"  name="orderForm" action="${pageContext.request.contextPath}/orderCompleteController">
-<div class="super_container">
+<div class="super_container fixFooter">
    <!-- Header -->
    <jsp:include page="../../../WEB-INF/inc/navBar.jsp"></jsp:include>
    <!-- contents -->

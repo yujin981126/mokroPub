@@ -9,7 +9,7 @@ public class DBUtil {
 		Connection conn = null;
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			String dburl = "jdbc:mariadb://localhost:3306/mokroPub";
+			String dburl = "jdbc:mariadb://localhost:3306/mokropub";
 			String dbuser = "root";
 			String dbpw = "java1234";	
 			conn = DriverManager.getConnection(dburl,dbuser,dbpw);

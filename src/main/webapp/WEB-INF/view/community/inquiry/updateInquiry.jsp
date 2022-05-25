@@ -27,17 +27,9 @@
 	type="text/css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript">
-</script>
-
-<style>
-	.helper {
-    	color: #FF0000;
-    }
-</style>
 </head>
 <body>
-	<div class="super_container">
+	<div class="super_container fixFooter">
 		<!-- Header -->		
 		<jsp:include page="../../../../WEB-INF/inc/navBar.jsp"></jsp:include>
 		<div class="nullbox">
@@ -101,8 +93,10 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
+			<!-- Footer -->	
+	<jsp:include page="../../../../WEB-INF/inc/footer.jsp"></jsp:include>
+</div>
 </body>
 <script>
 	function updateInquiryCheck(){

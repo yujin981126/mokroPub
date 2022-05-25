@@ -19,7 +19,7 @@
 <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
-<div class="super_container">
+<div class="super_container fixFooter">
 	<!-- Header -->	
 	<jsp:include page="/WEB-INF/inc/navBar.jsp"></jsp:include>
 	<!-- contents -->
@@ -40,9 +40,7 @@
 		</div>
 		<div id="daumRoughmapContainer1652852286928" class="root_daum_roughmap root_daum_roughmap_landing float_center" ></div>
 	</div>
-</div>
 <!-- Footer -->
-<div class ="fixFooter">
 	<jsp:include page="../../../WEB-INF/inc/footer.jsp" ></jsp:include>
 </div>
 </body>

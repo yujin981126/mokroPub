@@ -17,7 +17,7 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="super_container">
+<div class="super_container fixFooter">
 	<!-- Header -->
 	<jsp:include page="../../../WEB-INF/inc/navBar.jsp"></jsp:include>
 	
@@ -82,19 +82,10 @@
 				<a href="${pageContext.request.contextPath}/categoryProductListController?currentPage=${currentPage+1}&categoryNo=${categoryNo}" class="btn btn-link">다음</a>
 			</c:if>
 		</div>
-	<c:if test="${fn:length(list) > 3}">
+			
+		</div>
+		<jsp:include page="../../../WEB-INF/inc/footer.jsp" ></jsp:include>
 	</div>
-			<!-- Footer -->	
-			<jsp:include page="../../../WEB-INF/inc/footer.jsp"></jsp:include>
-	</c:if>
-	
-	<c:if test="${fn:length(list) < 4}">
-		</div>
-		<!-- Footer -->
-		<div class ="fixFooter">
-			<jsp:include page="../../../WEB-INF/inc/footer.jsp" ></jsp:include>
-		</div>
-	</c:if>
 </body>
 <script>
 

@@ -20,7 +20,7 @@
 
 </head>
 <body>
-   <div class="super_container">
+   <div class="super_container fixFooter">
       <!-- Header -->
       <jsp:include page="../../../WEB-INF/inc/navBar.jsp"></jsp:include>
    
@@ -64,9 +64,6 @@
             </div>
          </div>   
       </div>
-     </div>
-<!-- Footer -->
-<div class ="fixFooter">
 	<jsp:include page="../../../WEB-INF/inc/footer.jsp" ></jsp:include>
 </div>
 </body>

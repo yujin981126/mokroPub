@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<div class="super_container">
+<div class="super_container fixFooter">
    <!-- Header -->      
    <jsp:include page="../../../WEB-INF/inc/navBar.jsp"></jsp:include>
    <!-- contents -->
@@ -78,8 +78,6 @@
                </c:forEach>
             </table>  
          </div>  
-   </div>
-</div>
    </div>
 </div>
    <!-- Footer -->   
