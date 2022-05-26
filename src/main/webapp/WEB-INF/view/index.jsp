@@ -18,19 +18,9 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 </style>
-<script type="text/javascript">
-
-	if(${deleteId == "true"}) {
-		alert("회원탈퇴 되었습니다!!");
-	}
-</script>
 </head>
 <body>
-	<c:if test="${deleteId != null}">
-		<%
-			session.setAttribute("deleteId", "false");
-		%>
-	</c:if>
+
 <div class="super_container">
 	<!-- Header -->	
 	<jsp:include page="/WEB-INF/inc/navBar.jsp"></jsp:include>
@@ -101,6 +91,9 @@
 						<div class="product_image">
 							<a href="${pageContext.request.contextPath}/productOneController?productNo=${item.productNo}">
 								<img src="images/${item.picture}" alt="">
+								<div class="product_option_box">
+									<span class="product_option_rank">${item.ranking}</span>
+								</div>
 							</a>
 						</div>
 						<div class="product_content clearfix">

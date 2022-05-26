@@ -61,7 +61,7 @@ public class DeleteCheckConsumerController extends HttpServlet {
          
          consumerDao.deleteConsumer(consumerId);
     	 System.out.println("계정이 정상적으로 삭제되었습니다. ============================================================================================================================================================================================================");
-    	 //삭제하고 세션을 초기화해야겠지?
+    	 //삭제하고 세션을 초기화
          request.getSession().invalidate(); // session 갱신 메서드 : 기존 session을 지우고 새로운 새션을 부여함
          
          String deleteId = "true";
