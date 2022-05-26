@@ -108,13 +108,7 @@ public class OrderCompleteController extends HttpServlet {
 			couponDao = new CouponDao();
 			// 쿠폰 사용 쿠폰-1
 			couponDao.updateCouponCount(couponNo);
-			// 사용할 쿠폰의 갯수를 조회
-			UseCouponCount = couponDao.selectUseCouponCount(couponNo);
-			if( UseCouponCount == 0 ) {
-				// 사용하고 난후 남은 쿠폰의 개수가 0개이면 기존쿠폰은 지우지 않고 유효기간은 0000년으로 update
-				couponDao.updateCouponValidity(couponNo);
-			}
-			System.out.println(UseCouponCount + " <-- UseCouponCount doPost() OrderCompleteController");
+
 			
 			//구매 완료 후 상품을 모두 삭제하는 쿼리
 			cartDao.DeleteProductInCartAll(consumerId);
