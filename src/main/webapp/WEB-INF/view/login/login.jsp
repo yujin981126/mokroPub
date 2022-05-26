@@ -42,9 +42,9 @@
 					</div>
 					<div class="col-sm-6">
 						<form action="${pageContext.request.contextPath}/loginController" method="post">
-							<input type="text" placeholder="USER ID" class="form-control text-center" name="userId">
+							<input type="text" placeholder="USER ID" class="form-control text-center" name="userId" value="guest">
 							<br>				
-							<input type="password"  placeholder="PASSWORD" class="form-control text-center" name="userPw">
+							<input type="password"  placeholder="PASSWORD" class="form-control text-center" name="userPw" value="1111">
 							<br>
 							<button type="submit" class="btn btn-info text-White btn-block">Log In</button>
 							<hr>

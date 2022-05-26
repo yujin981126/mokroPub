@@ -19,16 +19,16 @@ public class CouponDao {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		// consumerId에 따른 사용 가능 리스트 출력
-		String sql = " SELECT cl.consumer_coupon_list_no cListNo"
-				+ " , cl.coupon_no couponNo"
-				+ " , cl.consumer_no consumerNo"
-				+ " , cl.count count"
-				+ " , c.validity validity"
-				+ " , c.discount discount "
-				+ " FROM consumer_coupon_list cl "
-				+ "	INNER JOIN coupon c "
-				+ "		ON cl.coupon_no = c.coupon_no "
-				+ " WHERE cl.consumer_no = ? AND NOW() < validity ";
+		String sql = "  SELECT cl.consumer_coupon_list_no cListNo       "
+				+ "  , cl.coupon_no couponNo       "
+				+ "				     , cl.consumer_no consumerNo       "
+				+ "				     , cl.count `count`       "
+				+ "				     , c.validity validity       "
+				+ "				     , c.discount discount        "
+				+ "				     FROM consumer_coupon_list cl        "
+				+ "				    	INNER JOIN coupon c        "
+				+ "				    		ON cl.coupon_no = c.coupon_no   "
+				+ "				     WHERE cl.consumer_no = ? AND NOW() < validity; ";
 		
 		conn = DBUtil.getConnection();
 		

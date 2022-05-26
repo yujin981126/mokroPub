@@ -9,13 +9,45 @@ import vo.Product;
 
 
 public class OrdereAfterDao {
+	
+	// 쿠폰의 할인율을 조회
+				public int couponDiscount(int couponListNo) {
+					int discount = 0;
+					Connection conn = null;
+					PreparedStatement stmt = null;
+					ResultSet rs = null;
+					String sql= " SELECT c.discount "
+							+ " FROM consumer_coupon_list cl INNER JOIN coupon c "
+							+ " ON cl.coupon_no = c.coupon_no "
+							+ " WHERE cl.consumer_coupon_list_no = ? ";
+					try {
+						conn = DBUtil.getConnection();
+						stmt = conn.prepareStatement(sql);
+						stmt.setInt(1, couponListNo);
+						rs=stmt.executeQuery();
+						if(rs.next()) {
+							discount = rs.getInt("c.discount");
+						}
+
+					} catch (SQLException e) {
+						e.printStackTrace();
+					} finally {
+						try {
+							conn.close();
+						} catch (SQLException e) {
+							e.printStackTrace();
+						}
+					} 
+					return discount;
+				}
+				
 	// 사용자아이디로 번호를 찾기
 	public List<Map<String,Object>> selectOrderedById(int consumerNo){
 		List<Map<String,Object>> OrderedList = new ArrayList<Map<String,Object>>();
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql ="SELECT o.order_no orderNo   "
+		String sql =" SELECT o.order_no orderNo   "
 				+ ", o.consumer_no consumerNo   "
 				+ ", o.zipcode    "
 				+ ", o.address    "

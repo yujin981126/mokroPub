@@ -65,10 +65,9 @@
                      <td>${item.payment} 원 X ${item.count} 개 <br>
                       총 ${item.count*item.payment} 원</td>
                      <td>
-           				 <c:if test="${item.couponListNo == 1}">쿠폰 5% 할인</c:if> 	                                             	                                                         
-	                     <c:if test="${item.couponListNo == 2}"> 쿠폰 10% 할인</c:if> 
-	                     <c:if test="${item.couponListNo == 3}"> 쿠폰 15% 할인</c:if> 
-						 <c:if test="${item.couponListNo == 4}">쿠폰 20% 할인</c:if> 
+           				 <c:if test="${item.couponListNo == 0}">없음</c:if> 	
+           				  <c:if test="${item.couponListNo != 0}"> ${item.discount}% 쿠폰</c:if> 	
+           				                                         	                                                         
                      </td>
                      <td>${item.method}</td>
                      <td>${item.address} <br>${item.detailedAddress}</td>       

@@ -41,12 +41,14 @@ public class OrderAfterController extends HttpServlet {
 		// 사용자아이디로 번호를 찾기 orList로 반환
 		List<Map<String,Object>> orList = ordereAfterDao.selectOrderedById(consumerNo);
 		
+		
 		for(Map m : orList) {
 			int isReviewExist;
 			
 			isReviewExist = rd.isExistReviewByOrderNo((int)m.get("orderNo"));
+			int discount = ordereAfterDao.couponDiscount((int) m.get("couponListNo"));
 			
-			
+			m.put("discount",discount);
 			m.put("isReviewExist", isReviewExist);
 			
 			//-------------------------디버깅--------------------------------------
@@ -65,7 +67,8 @@ public class OrderAfterController extends HttpServlet {
 		}
 		
 		for(Map m : orList) {
-			System.out.println(m.get("isReviewExist") + "////////isReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExistisReviewExist");
+			System.out.println(m.get("isReviewExist"));
+			System.out.println(m.get("discount"));
 		}
 		// ISSUE : 리뷰가 존재하면 리뷰 작성이 불가능해야 함
 		// 근데 개별적으로 확인해야하니까 orList안에 작성하는게..
