@@ -17,6 +17,6 @@
 * Ubuntu 18.04.6 LTS
 * 구글 Chrome 브라우저에 최적화
 
-##  실행화면
+## Preview
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/81568681/176998984-6fe5ce78-4d43-4f40-b20b-f2a9f75f5c7e.gif)
