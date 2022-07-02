@@ -13,9 +13,9 @@
 
 ## 실행환경
 
-* - AWS Lightsail
-* - Ubuntu 18.04.6 LTS
-* - 구글 Chrome 브라우저에 최적화
+* AWS Lightsail
+* Ubuntu 18.04.6 LTS
+* 구글 Chrome 브라우저에 최적화
 
 ##  실행화면
 
