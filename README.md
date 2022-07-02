@@ -17,4 +17,6 @@ Spring (MVC)방식을 이용해 IT 취업 전문 학원 LMS를 구현한 CRUD기
 * Ubuntu 18.04.6 LTS
 * 구글 Chrome 브라우저에 최적화
 
+## Preview
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/81568681/176998984-6fe5ce78-4d43-4f40-b20b-f2a9f75f5c7e.gif)
