@@ -19,4 +19,4 @@
 
 ##  실행화면
 
-<img src="복사해온 URL">
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/81568681/176998984-6fe5ce78-4d43-4f40-b20b-f2a9f75f5c7e.gif)
