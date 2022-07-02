@@ -1,6 +1,6 @@
 # mokroPub
 
-[mokroPub](http://3.39.153.13/mokroPub/indexController) (+ 팀 프로젝트)<br>
+[mokroPub 바로가기](http://3.39.153.13/mokroPub/indexController) (+ 팀 프로젝트)<br>
 모델2(MVC)방식을 이용해 전통주 판매 쇼핑몰을 구현한 CRUD기반 웹 페이지 
 
 ## 개발환경
